@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<title>APAME4990</title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="static/css/bootstrap.css" rel="stylesheet">
+<link href="static/css/custom-styles.css" rel="stylesheet">
+<link href="static/css/image-effects.css" rel="stylesheet">
+
+<link href="static/css/normalize.css" rel="stylesheet">
+<link href="static/css/component.css" rel="stylesheet">
+<link href="static/css/font-awesome.css" rel="stylesheet">
+<link href="static/css/font-awesome-ie7.css" rel="stylesheet">
+<link href="static/css/button.css" rel="stylesheet">
+
+<script src="static/js/html5shiv.js"></script>
+<script src="static/js/respond.min.js"></script>
+<script src="static/js/modernizr.custom.js"></script>
+<body>
+
+<div class="container page-styling">
+<div class="header-wrapper">
+<div class="site-name">
+<h1>Meal Pal</h1>
+</div>
+</div>
+
+
+<div class="content-wrap">
+
+<div class="main-title spacing-bt">
+<ul class="grid effect-8" id="grid">
+    <li><h1>Hi! {{self_name}}</h1>
+        <h3>There are the restaurants in {{city}} you may be interested in<br>
+        {{business_name[0]}}<tr>  {{business_name[1]}}  <tr> {{business_name[2]}}</h3>
+        <p><br></p>
+        <h4> based on your favorite: <br> {{habit[0]}}, {{habit[1]}}, {{habit[2]}}</h4></li>
+</ul>
+
+</div>
+</div>
+<div class="ruler"></div>
+<div class="content-wrap centering">
+<div class="main-title spacing-bt">
+<ul class="grid effect-8" id="grid">
+<li><h1>Invite your meal partners to your favorite restaurant!</h1>
+    <h4>Based on your eating habit and location: {{city}}</h4>
+</li>
+</ul>
+</div>
+<div class="featured-items">
+<ul class="grid effect-2" id="grid">
+<li>
+<div class="item">
+    <h5>user_number: <br>{{number[0]}}<br>user_name:<br> {{name[0]}}</h5>
+<div class="grow">
+<img src="static/img/img1.jpg" alt="">
+</div>
+<p>Fans number: {{fans[0]}}<br> Useful number: {{useful[0]}} <br> Review number: {{rcount[0]}}<br></p>
+<p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+</div>
+</li>
+<li>
+<div class="item">
+    <h5>user_number: <br>{{number[1]}}<br>user_name: <br>{{name[1]}}</h5>
+<div class="grow">
+<img src="static/img/img2.jpg" alt="">
+</div>
+<p>Fans number: {{fans[1]}}<br> Useful number: {{useful[1]}} <br> Review number: {{rcount[0]}}<br></p>
+<p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+</div>
+</li>
+<li>
+<div class="item">
+    <h5>user_number:<br> {{number[2]}}<br>user_name: <br>{{name[2]}}</h5>
+<div class="grow">
+<img src="static/img/img3.jpg" alt="">
+</div>
+<p>Fans number: {{fans[2]}}<br> Useful number: {{useful[2]}} <br> Review number: {{rcount[2]}}<br></p>
+<p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Bootstrap core JavaScript
+ ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="static/js/jquery-1.9.1.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="static/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+<script src="static/js/masonry.pkgd.min.js"></script>
+<script src="static/js/imagesloaded.js"></script>
+<script src="static/js/classie.js"></script>
+<script src="static/js/AnimOnScroll.js"></script>
+
+<script>
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+                     minDuration : 0.4,
+                     maxDuration : 0.7,
+                     viewportFactor : 0.2
+                     } );
+    </script>
+
+
+</body>
+</html>
